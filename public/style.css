@@ -1,0 +1,22 @@
+body {
+font-family: Arial;
+transition: 0.3s;
+}
+
+body.dark {
+background: #0f172a;
+color: white;
+}
+
+body.light {
+background: white;
+color: black;
+}
+
+#messages {
+height: 300px;
+overflow-y: auto;
+border: 1px solid gray;
+margin: 10px;
+padding: 10px;
+}
