@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Secure Chat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="themeToggle">Alternar Tema</button>
+
+<div id="auth">
+<h2>Login</h2>
+<input id="user" placeholder="Usuário">
+<input id="pass" type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+<button onclick="register()">Criar conta</button>
+</div>
+
+<div id="chat" style="display:none;">
+<h2>Chat</h2>
+
+<input id="room" placeholder="Sala privada">
+<button onclick="joinRoom()">Entrar na sala</button>
+
+<div id="messages"></div>
+
+<input id="msg">
+<button onclick="sendMessage()">Enviar</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
